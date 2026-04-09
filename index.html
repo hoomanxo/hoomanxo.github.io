@@ -1,13 +1,97 @@
-<html>
-  <head>
-    <title>Hooman's GitHub Page</title>
-  </head>
-  <body>
-    <h1>Welcome</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hooman's | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+ </head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="reveal">
+  <h1>Hooman's Page</h1>
+  <p style="text-align:center;">Software Developer / Data Analyst</p>
+</section>
+
+<section id="about" class="reveal">
+  <div class="glass">
+    <h2>About Me</h2>
     <p>
       I am a  Software Developer / Data Analyst in Toronto, Canada.
       I build visually engaging web experiences using modern technologies and creative design.
     </p>
+  </div>
+</section>
 
-  </body>
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <img src="project1.png">
+      <div class="project-overlay">
+        <h3>Olympic Race Simulator</h3>
+        <p>A stopwatch used to time an Olympic-style simulation, ranking participants based on their recorded time, using HTML/CSS and JavaScript.</p>
+        <button class="btn"><a href="https://github.com/hoomanv3xo/Olympic-Race-Simulator"</a>View</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" />
+      <div class="project-overlay">
+        <h3>Project Two</h3>
+        <p>Modern responsive design</p>
+        <button class="btn">View</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" />
+      <div class="project-overlay">
+        <h3>Project Three</h3>
+        <p>Interactive JS app</p>
+        <button class="btn">View</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="resume" class="reveal">
+  <div class="glass">
+    <h2>Resume</h2>
+    <ul>
+      <li>Frontend Developer – Company</li>
+      <li>Computer Science Degree</li>
+    </ul>
+    <p style="text-align:center;">
+      <button class="btn">Download Resume</button>
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="glass">
+    <h2>Contact</h2>
+    <p style="text-align:center;">your@email.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+
+</body>
 </html>
