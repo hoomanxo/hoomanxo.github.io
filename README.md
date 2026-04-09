@@ -50,5 +50,5 @@ This is Hooman, a Software Engineer in Toronto, Canada.<img src="https://media.g
 ### :fire: My Stats :
  [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=hoomanxo&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
    
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hoomanxo&layout=compact)](https://github.com/hoomanxo/github-readme-stats)
+
    
