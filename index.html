@@ -1,129 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Subtract: track subscriptions without linking your bank</title>
-<meta name="description" content="Know what you pay for and what renews next. No bank login, no account. Your data stays on your device.">
-<meta property="og:title" content="Subtract: track subscriptions without linking your bank">
-<meta property="og:description" content="Know what you pay for and what renews next. No bank login, no account.">
-<meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#EDF1EE;--surface:#FBFCFA;--ink:#12302E;--muted:#586D69;--line:#CBD6D1;--accent:#0E6B5F;--on-accent:#FFFFFF;--warn:#9A4A06;--warn-bg:#FBEBD3;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#0D1B1A;--surface:#142726;--ink:#E4EFEA;--muted:#8FA8A2;--line:#274241;--accent:#4FD1B5;--on-accent:#06201C;--warn:#F5B94A;--warn-bg:#3A2B0E;color-scheme:dark}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:860px;margin:0 auto;padding:24px 20px}
-nav{display:flex;justify-content:space-between;align-items:center}
-.brand{font-weight:800;font-size:22px;letter-spacing:-.02em}
-a{color:var(--accent)}
-.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:600;text-decoration:none;padding:12px 22px;border-radius:10px;border:0;font:inherit;font-weight:600;cursor:pointer}
-.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.hero{padding:56px 0 40px}
-h1{font-size:clamp(36px,7.5vw,64px);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 18px;max-width:14em}
-.lede{font-size:clamp(18px,2.6vw,21px);color:var(--muted);max-width:34em;margin:0 0 26px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.preview{margin:36px 0 8px;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:22px}
-.preview .n{font-weight:800;font-size:clamp(48px,12vw,84px);line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
-.preview .n small{font-size:.28em;font-weight:600;color:var(--muted);margin-left:.4em;letter-spacing:0}
-.preview p{color:var(--muted);margin:8px 0 14px}
-.row{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:10px 0;font-size:16px}
-.badge{border-radius:999px;padding:1px 10px;font-size:13px;font-weight:600;background:var(--warn-bg);color:var(--warn);margin-left:8px}
-.eg{font-size:13px;color:var(--muted);margin:10px 0 0}
-section{padding:40px 0;border-top:1px solid var(--line)}
-h2{font-size:28px;letter-spacing:-.02em;margin:0 0 18px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:0;padding:0;list-style:none;counter-reset:s}
-.steps li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;counter-increment:s}
-.steps li::before{content:counter(s);display:block;font-weight:800;font-size:28px;color:var(--accent)}
-.steps b{display:block;margin:2px 0}
-.steps span,.muted{color:var(--muted);font-size:16px}
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.card h3{margin:0 0 8px;font-size:18px}
-.card ul{margin:0;padding-left:20px}
-.soon{font-size:12px;font-weight:600;color:var(--warn);background:var(--warn-bg);border-radius:999px;padding:1px 8px;margin-left:6px;white-space:nowrap}
-details{border-top:1px solid var(--line);padding:14px 0}
-summary{cursor:pointer;font-weight:600}
-details p{color:var(--muted);margin:8px 0 0}
-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
-input[type=email]{flex:1 1 240px;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
-footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
-</style>
+  <meta charset="UTF-8">
+  <title>Hooman's | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #22C55E;      /* modern green */
+      --secondary: #A3E635;    /* lime accent */
+      --accent: #06B6D4;       /* cyan pop */
+      --bg: linear-gradient(135deg, #ECFDF5, #BBF7D0);
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: #FFFFF;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.3);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #F0FF00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* GLASS CARD */
+    .glass {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* PROJECT GRID */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(108,99,255,0.8),
+        rgba(255,101,132,0.8)
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.4s;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: var(--accent);
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00f5d4;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #0F0F0F;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <nav><div class="brand">Subtract</div><a href="app.html">Open the tracker</a></nav>
 
-  <header class="hero">
-    <h1>Know what you pay for. Skip the bank login.</h1>
-    <p class="lede">Subtract shows every subscription you pay for, what it costs per year, and what renews next. No account to make, nothing to link, and your data never leaves your device.</p>
-    <div class="cta">
-      <a class="btn" href="app.html">Try it free</a>
-      <a class="btn alt" href="#waitlist">Get updates</a>
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#etc">Etc</a>
+  </nav>
+</header>
+
+<section id="home" class="reveal">
+  <h1>Hooman's Page</h1>
+  <p style="text-align:center;">Software Engineer / Data Analyst</p>
+</section>
+
+<section id="about" class="reveal">
+  <div class="glass">
+    <h2>About Me</h2>
+    <p>
+      I am a Software Developer / Data Analyst in Toronto, Canada.
+      I build visually engaging web experiences using modern technologies and creative design.
+      I have earned a Certificate in Computer Programming Applications from Toronto Metropolitan University (Ryerson) and a Diploma in Computer 
+      Networking from CDI college. Currently, I am studying to complete an associate degree in Computer Science from University of the People.
+    </p>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <img src="project1.png">
+      <div class="project-overlay">
+        <h3>Olympic Race Simulator</h3>
+        <p>A stopwatch used to time an Olympic-style simulation, ranking participants based on their recorded time, using HTML/CSS and JavaScript.</p>
+        <button class="btn"><a href="https://github.com/hoomanxo/Olympic-Race-Simulator">Code</a></button>
+      </div>
+    </div>
+    
+
+    <div class="project-card">
+      <img src="project2.png">
+      <div class="project-overlay">
+        <h3>Weight Tracker</h3>
+        <p>An app that records user's weight and graphs the progress.</p>
+        <button class="btn"><a href="https://github.com/hoomanxo/Weight-Tracker">Code</a></button>
+      </div>
     </div>
 
-    <div class="preview" aria-label="Example of the dashboard">
-      <div class="n">$146.45<small>a month</small></div>
-      <p><b>$1,757</b> a year across 6 subscriptions.</p>
-      <div class="row"><span>Netflix</span><span>$15.49 <span class="badge">Renews in 3 days</span></span></div>
-      <div class="row"><span>Gym</span><span>$39.99 <span class="badge">Renews in 6 days</span></span></div>
-      <div class="row"><span>Spotify</span><span>$11.99</span></div>
-      <p class="eg">Example data.</p>
+    <div class="project-card">
+      <img src="project3.png">
+      <div class="project-overlay">
+        <h3>Registration System</h3>
+        <p>An app for Student Registration</p>
+        <button class="btn"><a href="https://github.com/hoomanxo/Registration-System">Code</a></button>
+      </div>
     </div>
-  </header>
 
-  <section>
-    <h2>How it works</h2>
-    <ol class="steps">
-      <li><b>Add what you pay for</b><span>Enter the name, price, how often it bills, and the next renewal date. It takes about ten seconds each.</span></li>
-      <li><b>See the real total</b><span>Monthly and yearly cost, a category breakdown, and your most expensive subscription.</span></li>
-      <li><b>Act before it renews</b><span>Renewals are sorted by date, every subscription has a cancel-page link, and you can add a calendar reminder.</span></li>
-    </ol>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Why no bank link?</h2>
-    <div class="two">
-      <div class="card"><h3>Your data stays with you</h3><p class="muted" style="margin:0">Subscriptions are stored in your browser. There is no account to hack and no bank connection to revoke.</p></div>
-      <div class="card"><h3>No tricks to cancel</h3><p class="muted" style="margin:0">Subtract links you to the service’s own cancel page. It doesn’t charge you to cancel and doesn’t negotiate on your behalf.</p></div>
-    </div>
-  </section>
+<section id="resume" class="reveal">
+  <div class="glass">
+    <h2>Resume</h2>
+    <iframe src="HoomanVahdat_SoftwareEngineer.pdf" width="100%" height="600px"></iframe>
+     <ul>
+      Data Analyst
+    </ul>
+  </div>
+</section>
 
-  <section>
-    <h2>What you get</h2>
-    <div class="two">
-      <div class="card"><h3>Available now</h3><ul>
-        <li>Monthly and yearly totals</li><li>Renewal dates and “renews soon” alerts</li><li>Category breakdown</li><li>Cancel-page links</li><li>Calendar reminders</li><li>Track how much you save by cancelling</li></ul></div>
-      <div class="card"><h3>Coming next</h3><ul>
-        <li>Forward a receipt email and it’s added for you <span class="soon">in progress</span></li>
-        <li>Email reminders before renewals <span class="soon">in progress</span></li>
-        <li>Sync across your devices <span class="soon">planned</span></li></ul>
-        <p class="muted" style="margin:10px 0 0">The free plan will cover up to 5 subscriptions.</p></div>
-    </div>
-  </section>
+<section id="etc" class="reveal">
+  <div class="glass">
+    <h2>Etc</h2>
+    <a href="https://ca.linkedin.com/in/hoomanvahdat">LinkedIn</a>
+    <p style="text-align:center;">hoomanv2@gmail.com</p>
+  </div>
+</section>
 
-  <section id="waitlist">
-    <h2>Get notified when forwarding launches</h2>
-    <p class="muted" style="margin:0">One email when receipt forwarding is ready. No spam, and no sharing your address.</p>
-    <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io, free tier) -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="em" style="position:absolute;left:-9999px">Email address</label>
-      <input id="em" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
-      <button class="btn" type="submit">Notify me</button>
-    </form>
-  </section>
+<footer>
+  <p>© 2026 Hooman V</p>
+</footer>
 
-  <section>
-    <h2>Questions</h2>
-    <details><summary>Is it really free?</summary><p>Yes, the tracker is free to use. A paid plan with extras like email reminders and sync is planned, and the free plan will keep covering up to 5 subscriptions.</p></details>
-    <details><summary>Where is my data stored?</summary><p>In your own browser, on your device. Subtract doesn’t receive it. That also means clearing your browser data erases it, so use the backup option in the app.</p></details>
-    <details><summary>Does it work on my phone?</summary><p>Yes. Open the page in your phone’s browser. Add it to your home screen for quick access.</p></details>
-    <details><summary>Will it cancel subscriptions for me?</summary><p>No. It shows you what you pay, reminds you before renewals, and links to each service’s cancel page. You stay in control.</p></details>
-  </section>
+<script>
+  const reveals = document.querySelectorAll(".reveal");
 
-  <footer>Built by Hooman in Toronto. Questions or feedback? Open an issue on GitHub.</footer>
-</div>
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+
+      if (sectionTop < windowHeight - 100) {
+        section.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
 </body>
 </html>
+
+   
+
+    
