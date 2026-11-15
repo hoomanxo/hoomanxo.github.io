@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <style>
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="leftcolumn">
+        <h3>Links</h3>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="etc.html">Etc</a>
+    </div>
+    <div id="content">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            
+               <div class="project-card">
+                <img src="subtract.png" alt="Subtract subscription tracker">
+                <h3>Subtract</h3>
+                <p>A free subscription tracker with no bank linking and no account to create. It shows every subscription, what it costs per year, and what renews next.</p>
+                <a href="https://github.com/hoomanxo/subtract">View Project</a>
+                <a href="https://hoomanxo.github.io/subtract/?ref=portfolio">Live</a>
+                <a href="https://www.indiehackers.com/hoomanxo">Indie Hackers</a>
+            </div>
+
+               <div class="project-card">
+                <img src="registry.png" alt="Registry">
+                <h3>Java Registry</h3>
+                <p>Built a student registry that manages students, courses, and grades, with browse, search, add, and delete functions.</p>
+                <p>In the included benchmark, opening a course with 100,000 students and 500,000 marks dropped from about 3.4 seconds (linear scans) to about 1 ms.</p>
+                <a href="https://github.com/hoomanv3xo/Registry">View Project</a>
+            </div>
+            
+            <div class="project-card">
+                <img src="chatapp.png" alt="Chat app">
+                <h3>Chat app</h3>
+                <p>Load-tested real-time chat locally with 50 concurrent WebSocket clients: 100% message delivery (12,500/12,500), zero dropped connections.</p>
+                <a href="https://github.com/hoomanv3xo/chatapp">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="chatbot.png" alt="AI Chatbot">
+                <h3>AI Chatbot</h3>
+                <p>Built and deployed a Flask web app that sends user questions to the Cohere LLM API and renders responses as formatted Markdown in a custom chat interface.</p>
+                <a href="https://github.com/hoomanv3xo/Chatbot">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="localrestaurant.png" alt="Local Restaurants Map">
+                <h3>Local Restaurants Map</h3>
+                <p>Built an app that requests the visitor's location and marks nearby restaurants, cafés, and fast-food places on a map.</p>
+                <a href="https://github.com/hoomanv3xo/Local-Restaurants-Map">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="stocks-image.png" alt="Stocks Portfolio">
+                <h3>Stocks Portfolio</h3>
+                <p>A Flask web app for recording stock purchases. Users enter a stock symbol, number of shares, and purchase price through a form, the input is validated on the server, and the entry is saved in the user's session and shown on the stocks page..</p>
+                <a href="https://github.com/hoomanv3xo/Stocks-Portfolio">View Project</a>
+                <a href="https://hooman-stocks.onrender.com/">Live</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
